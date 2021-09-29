@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import App2 from './App2';
 import App3 from './App3';
+import App4 from './App4';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할 
@@ -11,6 +12,8 @@ ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할
     <App />
     <App2 />
     <App3 />
+    <App4 />
+
   </React.StrictMode>,
   // 
   document.getElementById('root')
