@@ -2,7 +2,7 @@ import React,{Fragment} from 'react';
 
 
 function App4() {
-  const name = '축구';
+  const name = 'App4';
   return (
     <>
       <div 
