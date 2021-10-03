@@ -1,5 +1,4 @@
 import React from 'react';
-import App8 from './App8';
 import MyComponent5 from './MyComponent5';
 
 const App9 = () => {
