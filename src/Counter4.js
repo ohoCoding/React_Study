@@ -3,15 +3,15 @@ import React, { Component } from 'react';
 class Counter4 extends Component {
     //construcotr 메서드를 사용하지 않고도 state 초기값 설정 가능 
     state = {
-        Counter3number: 0,
-        Counter3fiexdNumber: 0
+        Counter4number: 0,
+        Counter4fiexdNumber: 0
     };
     render(){
-        const { Counter3number, Counter3fiexdNumber } = this.state; // state를 조회할 때 this.stat로 조회
+        const { Counter4number, Counter4fiexdNumber } = this.state; // state를 조회할 때 this.state로 조회
         return(
             <div>
-                <h1> Counter3바뀌는값 : {Counter3number} </h1>
-                <h2> Counter3바뀌지 않는 값: {Counter3fiexdNumber} </h2>
+                <h1> Counter4바뀌는값 : {Counter4number} </h1>
+                <h2> Counter4바뀌지 않는 값: {Counter4fiexdNumber} </h2>
                 <button 
                   //onClick을 통해 버튼이 클릭되었을 때 호출할 함수를 지정 
                   onClick = {() => {
@@ -24,11 +24,13 @@ class Counter4 extends Component {
                       // 객체 대신에 함수를 인자로 넣으면 this.setState를 두번 사용할때 오류 방지  
                       this.setState((prevState, props) => {
                           return{
-                            number: prevState.number + 1
+                            Counter4number: prevState.Counter4number + 1
                           };
                       });
+                      // 화살표함수 에서 값을 바로 반환하고 싶으면 코드블록 {} 를 생략 
+                      // ex) const sum = (a,b) => a+b;
                       this.setState(prevState => ({
-                          number: prevState.number+1
+                        Counter4number: prevState.Counter4number + 1
                       }));
                       
                   }}
