@@ -27,6 +27,7 @@ import App22 from './App22';
 import App23 from './App23';
 import App24 from './App24';
 import App25 from './App25';
+import App26 from './App26';
 ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할 
   <React.StrictMode>
     <App />
@@ -54,6 +55,7 @@ ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할
     <App23 />
     <App24 />
     <App25 />
+    <App26 />
   </React.StrictMode>,
   // 
   document.getElementById('root')
