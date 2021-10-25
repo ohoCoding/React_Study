@@ -5,7 +5,7 @@ const EventPractice10 = () => {
         username: '',
         message: ''
     });
-    const [ username , message ] = form;
+    const {username , message}   = form;
     const onChange = e => {
         const nextForm = {
             ...form, // 기존의 from내용을 이자리에 복사 
