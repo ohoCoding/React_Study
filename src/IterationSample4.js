@@ -12,7 +12,7 @@ const IterationSample3 = () => {
     const [inputText, setInputText] = useState('');
     
     //3. 데이터 배열에서 새로운 항목을 추가할 때 사용할 고유 id를 위한 상태 
-    const [nextId, setNextId] = useState('');
+    const [nextId, setNextId] = useState(5);
 
     const onChange = e => setInputText(e.target.value);
 
@@ -33,8 +33,14 @@ const IterationSample3 = () => {
         
     };
 
+    const onRemove = id =>{
+        const nextNames = names.filter(name => name.id !== id);
+        setNames(nextNames);
+    };
     // map함수를 사용할떄 key값을 index 대신 name.id 값으로 지정 
-    const namesList = names.map( name => <li key = {name.id}> {name.text} </li>);
+    const namesList = names.map( name => 
+        <li key = {name.id} onDoubleClick = {() => onRemove(name.id)}>
+             {name.text} </li>);
     
     return(
      <>
