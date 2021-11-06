@@ -36,6 +36,7 @@ import App31 from './App31';
 import App32 from './App32';
 import App33 from './App33';
 import App34 from './App34';
+import App35 from './App35';
 ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할 
   <React.StrictMode>
     <App />
@@ -72,6 +73,7 @@ ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할
     <App32 />
     <App33 />
     <App34 />
+    <App35 />
   </React.StrictMode>,
   // 
   document.getElementById('root')
