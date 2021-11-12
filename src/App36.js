@@ -19,7 +19,7 @@ class App36 extends Component {
     render(){
         return(
             <div>
-                <button onClick = { this.handleClick } >랜덤 색상</button>
+                <button onClick = { this.handleClick } > 랜덤 색상</button>
                 <ErrorBoundary>
                 <LifeCycleSample2 color = {this.state.color} />
                 </ErrorBoundary>

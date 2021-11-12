@@ -1,6 +1,6 @@
-import React, { Componet } from 'react';
+import React, { Component } from 'react';
 
-class ErrorBoundary extends Componet {
+class ErrorBoundary extends Component {
     state = {
         error: false
     };
@@ -11,8 +11,7 @@ class ErrorBoundary extends Componet {
         console.log({error,info});
     }
     render(){
-        if(this.state.error) 
-        return<div>에러가 발생했습니다!!</div>;
+        if(this.state.error) return <div>에러가 발생했습니다!!</div>;
         return this.props.children;
     }
 }
