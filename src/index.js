@@ -80,6 +80,7 @@ ReactDOM.render(  //컴포넌트를 페이지에 렌더링하는 역할
     <App36 />
     <App37 />
     <App38 />
+    <App39 />
   </React.StrictMode>,
   // 
   document.getElementById('root')
