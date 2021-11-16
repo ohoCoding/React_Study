@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from 'react';
 
-const Info2 = () => {
+const Info3 = () => {
     const [name, setName] = useState('');
     const [nickname, setNickname] = useState('');
 
@@ -18,7 +18,12 @@ const Info2 = () => {
 
     //특정값이 업데이트 될때만 실행
     useEffect(() => {
+        console.log('effect');
         console.log(name);
+        return() => {
+            console.log('clean up');
+            console.log(name);
+        }
     },[name]);
     
     const onChangeName = e => {
@@ -47,4 +52,4 @@ const Info2 = () => {
     );
 };
 
-export default Info2;
+export default Info3;
